@@ -51,9 +51,18 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Jay Suggs</h1>
-							<span class="image main">
-                                <img src="images/Jay_Suggs_ESCI_Headshot.png" alt="" width="300" height="300" />
-                            </span>
+							<style>
+                                .image.main img {
+                                  width: 100%;   /* Makes image responsive to the container */
+                                  max-width: 100px; /* Ensures the image doesn't get larger than 300px */
+                                  height: auto;   /* Maintains aspect ratio */
+                                }
+                              </style>
+                              
+                              <span class="image main">
+                                  <img src="images/Jay_Suggs_ESCI_Headshot.png" alt="" />
+                              </span>
+                              
                             
 							<p>Hi I'm Jay! I'm an Engineering Physics student from Philadelphia. My passions include playing tennis, guitar, and board games. I also love working on guitars and building my own guitar pedals.</p> 
 
